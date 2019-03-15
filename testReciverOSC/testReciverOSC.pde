@@ -24,7 +24,11 @@ void setup() {
 void draw() {
   background(0);
   if(detectado){
+    fill(255,0,0); 
     ellipse(400/2,400/2,100,100);
+  }else{
+    fill(255,255,255); 
+    ellipse(400/2,400/2,20,20);
   }
 }
 

@@ -1,0 +1,2 @@
+Codigo,Fecha,Hora,Minutos,Segundos
+OK,15/03/2019,19,31,35
