@@ -12,6 +12,6 @@ Software Adicional
 - OSC python https://pypi.org/project/python-osc/
 
 Instalación
-1_ Habilitar la camara luego de conectarla desde raspi-config
-2_ Copiat todos los archivos a un directorio
-3_ Ejecutar python3 uMainOSC.py en un terminal.
+- Habilitar la camara luego de conectarla desde raspi-config
+- Copiar todos los archivos a un directorio
+- Ejecutar python3 uMainOSC.py en un terminal.
