@@ -22,6 +22,7 @@ Software Adicional
 Instalación
 - Habilitar la camara luego de conectarla desde raspi-config
 - Copiar todos los archivos a un directorio
-- Editar las lineas 23 a 25 de uMainOSC.py con los datos del receptor (Resolume) de OSC y el mensaje a enviar. 
+- Instalar OSC para python 3: pip3 install python-osc
+- Editar las lineas 23 a 25 de uMainOSC.py con los datos del receptor (Processing / Resolume) de OSC y el mensaje a enviar. 
 - Ejecutar python3 uMainOSC.py en un terminal.
 - Utilizar testReciverOSC (sketch en Processing 2) para probar la recepción de mensajes desde la Raspi. Al recibir una detección de movimiento aparecerá un punto rojo, mientras que no detecte aparecera un punto pequeño blanco
