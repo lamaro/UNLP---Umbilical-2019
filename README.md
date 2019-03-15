@@ -1,6 +1,4 @@
-# UNLP---Umbilical-2019
-
-Proyecto UNLP - Umbilical
+#Proyecto UNLP - Umbilical
 Autor: Amaro García Leandro
 
 Hardware
