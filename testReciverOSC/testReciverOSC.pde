@@ -41,7 +41,7 @@ void oscEvent(OscMessage theOscMessage) {
   int firstValue = theOscMessage.get(0).intValue();
    //println(" values: "+firstValue+", "+secondValue+", "+thirdValue);
    println(" Recibido: "+firstValue);
-   if(firstValue == 0){
+   if(firstValue == 1){
      detectado = true;
    }else{
      detectado = false;

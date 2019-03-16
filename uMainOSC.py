@@ -27,7 +27,6 @@ args = parser.parse_args()
 client = udp_client.SimpleUDPClient(args.ip, args.port)
 
 print("Iniciando Loop")
-
 try:
     while True:
         motionState = P3picam.motion()
@@ -36,13 +35,18 @@ try:
             currentTime = datetime.now()
             print("Usuario detectado - " + datahora())
             if activarLog:
+                logFile = open(logFilePath,"a")
                 logFile.write("OK," + datahora()) 
+                logFile.close()
             time.sleep(sleepTime)
         else:
             client.send_message(oscPath, 0)
             print("Fuera de rango")
 
 except KeyboardInterrupt:
-    logFile.write("ERR," + datahora()) 
-    logFile.close()
+    if activarLog:
+        logFile = open(logFilePath,"a")
+        logFile.write("ERR," + datahora()) 
+        logFile.close() 
+    
     time.sleep(1)
